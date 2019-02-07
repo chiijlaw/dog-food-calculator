@@ -1,0 +1,34 @@
+{
+  "name": "dog-food-calculator",
+  "version": "1.0.0",
+  "description": "Dog food nutrient calculator",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "build": "webpack --config webpack.config.js -d --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chiijlaw/dog-food-calculator.git"
+  },
+  "author": "Chii",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chiijlaw/dog-food-calculator/issues"
+  },
+  "homepage": "https://github.com/chiijlaw/dog-food-calculator#readme",
+  "devDependencies": {
+    "nodemon": "^1.18.9",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3"
+  },
+  "dependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "express": "^4.16.4",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1"
+  }
+}
