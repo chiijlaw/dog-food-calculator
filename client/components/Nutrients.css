@@ -1,0 +1,21 @@
+ul {
+  list-style-type: none;
+  padding: 6px;
+}
+
+#protein {
+  color: #f06324;
+}
+
+#fat {
+  color: #23ac9b;
+}
+
+#carb {
+  color: #e2d16e;
+}
+
+.numbers {
+  font-size: 42px;
+  font-weight: 200;
+}

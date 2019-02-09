@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./Brand.css";
 
 function Brand({ options, title, name, handleChange }) {
   const listOptions = options.map((opt, key) => {
@@ -11,10 +12,9 @@ function Brand({ options, title, name, handleChange }) {
 
   return (
     <div>
-      <h1>{title}</h1>
+      <h1 className={styles.title}>{title}</h1>
       <form>
         <label>
-          {/* {title === "Our Brand" ? "Our recipes:" : "Other dog food brand:"} */}
           <select value={name} onChange={e => handleChange(e.target.value)}>
             <option defaultValue hidden>
               Choose Here

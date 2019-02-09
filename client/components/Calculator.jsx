@@ -64,27 +64,35 @@ function Calculator() {
   const ourNutrients = ourBrand ? ourRecipes[ourBrand].nutrients : [0, 0, 0];
 
   return (
-    <div>
-      <div className="other">
-        <Brand
-          options={otherOptions}
-          title="Other Brands"
-          name={otherBrand}
-          handleChange={setOtherBrand}
-        />
-        <Nutrients nutrients={otherNutrients} />
+    <div className={styles.container}>
+      <h1>Dog food comparison calculator</h1>
+      <div className={styles.compare}>
+        <div className={styles.side} id={styles.otherSide}>
+          <Brand
+            options={otherOptions}
+            title="Other Brands"
+            name={otherBrand}
+            handleChange={setOtherBrand}
+          />
+          <Nutrients nutrients={otherNutrients} ours={false} />
+        </div>
+        <div className={styles.side} id={styles.ourSide}>
+          <Brand
+            options={ourOptions}
+            title="Our Brand"
+            name={ourBrand}
+            handleChange={setOurBrand}
+          />
+          <Nutrients nutrients={ourNutrients} ours={true} />
+        </div>
       </div>
-      <div className="our">
-        <Brand
-          options={ourOptions}
-          title="Our Brand"
-          name={ourBrand}
-          handleChange={setOurBrand}
-        />
-        <Nutrients nutrients={ourNutrients} />
+      <div className={styles.fine}>
+        Learn about <a href="#">the role of protein, fat, and carbs</a> in a
+        dog's diet.
       </div>
-
-      <p>* All units above are given in grams per 1000 calories (g/kcal).</p>
+      <p className={styles.fine}>
+        * All units above are given in grams per 1000 calories (g/kcal).
+      </p>
     </div>
   );
 }

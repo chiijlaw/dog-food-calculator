@@ -1,0 +1,10 @@
+select {
+  width: 400px;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: pre;
+}
+
+.title {
+  font-weight: 300;
+}
