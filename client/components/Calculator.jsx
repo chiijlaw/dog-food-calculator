@@ -2,11 +2,8 @@ import React, { useState } from "react";
 import Brand from "./Brand.jsx";
 import Nutrients from "./Nutrients.jsx";
 import styles from "./Calculator.css";
-// nutrients: % protein (min.), % fat (min.), Caloric Density (kcal/kg)
 
-// 'Purina ONE Beef & Brown Rice Entrée Classic Ground Wet Dog Food' 8,7,1155 > 82,69,35
-// 'BLUE Chicken and Brown Rice Recipe Dry Dog Food' 24,14,3613 > 71,42,114
-// Royal Canin Medium Digestive Care Dry Dog Food  23,16,3833 > 64,44,114
+// nutrients: % protein (min.), % fat (min.), Caloric Density (kcal/kg)
 
 function Calculator() {
   const [otherBrand, setOtherBrand] = useState("");
