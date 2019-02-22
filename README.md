@@ -1,9 +1,6 @@
 # Dog food comparison calculator
 Nav menu created in React.
 
-## Visit Demo
-go to http://ec2-13-56-231-137.us-west-1.compute.amazonaws.com:8080/
-
 ### Prerequisites
 
 > This assumes you are using [npm](https://www.npmjs.com/) as your package manager.
